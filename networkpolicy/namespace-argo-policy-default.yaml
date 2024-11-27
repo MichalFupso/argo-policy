@@ -2,7 +2,7 @@ apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:
   name: allow-all
-  namespace: argocd
+  namespace: default.argocd
 spec:
   tier: default
   ingress:
