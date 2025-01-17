@@ -4,7 +4,7 @@ metadata:
   name: security.default-deny-v3
 spec:
   tier: security
-  selector: projectcalico.org/namespace not in  {'kube-system', 'calico-system', 'calico-apiserver'}
+  selector: projectcalico.org/namespace not in  {'kube-system', 'calico-system', 'calico-apiserver', 'argocd'}
   types:
     - Ingress
     - Egress
