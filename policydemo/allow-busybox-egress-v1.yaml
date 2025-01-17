@@ -1,0 +1,14 @@
+apiVersion: crd.projectcalico.org/v1
+kind: NetworkPolicy
+metadata:
+  name: security.allow-busybox-egress-v1
+  namespace: advanced-policy-demo
+spec:
+  tier: security
+  egress:
+    - action: Allow
+      destination: {}
+      source: {}
+  selector: run == 'access'
+  types:
+    - Egress

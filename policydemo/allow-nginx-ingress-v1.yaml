@@ -1,0 +1,15 @@
+apiVersion: crd.projectcalico.org/v1
+kind: NetworkPolicy
+metadata:
+  name: security.allow-nginx-ingress-v1
+  namespace: advanced-policy-demo
+spec:
+  tier: security
+  ingress:
+    - action: Allow
+      destination: {}
+      source:
+        selector: run == 'access'
+  selector: app == 'nginx'
+  types:
+    - Ingress
