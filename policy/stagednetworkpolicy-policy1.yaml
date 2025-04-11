@@ -1,7 +1,7 @@
 apiVersion: projectcalico.org/v3
 kind: StagedNetworkPolicy
 metadata:
-  name: default.policy1
+  name: default.staged-policy1
   namespace: calico-system
 spec:
   types:
