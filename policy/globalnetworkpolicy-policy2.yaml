@@ -1,18 +1,17 @@
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:
-  name: namespace-isolation.allow-all
+  name: policy2
 spec:
-  tier: namespace-isolation
-  order: 300
-  ingress:
-    - action: Allow
-      source: {}
-      destination: {}
   egress:
     - action: Allow
-      source: {}
       destination: {}
+      source: {}
+  ingress:
+    - action: Allow
+      destination: {}
+      source: {}
+  tier: default
   types:
     - Ingress
     - Egress

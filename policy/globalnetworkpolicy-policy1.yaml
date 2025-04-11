@@ -1,16 +1,17 @@
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:
-  name: allow-all
+  name: default.policy1
 spec:
-  ingress:
-    - action: Allow
-      source: {}
-      destination: {}
   egress:
     - action: Allow
-      source: {}
       destination: {}
+      source: {}
+  ingress:
+    - action: Allow
+      destination: {}
+      source: {}
+  tier: default
   types:
     - Ingress
     - Egress
