@@ -1,0 +1,17 @@
+apiVersion: projectcalico.org/v3
+kind: GlobalNetworkPolicy
+metadata:
+  name: policy4
+spec:
+  egress:
+    - action: Allow
+      destination: {}
+      source: {}
+  ingress:
+    - action: Allow
+      destination: {}
+      source: {}
+  tier: default
+  types:
+    - Ingress
+    - Egress
