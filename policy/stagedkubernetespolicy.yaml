@@ -1,0 +1,10 @@
+apiVersion: projectcalico.org/v3
+kind: StagedKubernetesNetworkPolicy
+metadata:
+  name: default-deny-egress
+  namespace: advanced-policy-demo
+spec:
+  podSelector: {}
+  policyTypes:
+    - Egress
+    - Ingress
