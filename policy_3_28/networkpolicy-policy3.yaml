@@ -1,0 +1,17 @@
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: policy3
+  namespace: calico-system
+spec:
+  egress:
+    - action: Allow
+      destination: {}
+      source: {}
+  ingress:
+    - action: Allow
+      destination: {}
+      source: {}
+  types:
+    - Ingress
+    - Egress
