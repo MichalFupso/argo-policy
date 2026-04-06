@@ -1,7 +1,7 @@
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:
-  name: default.policy1
+  name: default.policy5
   namespace: calico-system
 spec:
   egress:

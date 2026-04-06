@@ -1,8 +1,7 @@
 apiVersion: projectcalico.org/v3
-kind: NetworkPolicy
+kind: GlobalNetworkPolicy
 metadata:
-  name: default.policy2
-  namespace: calico-system
+  name: default.policy3
 spec:
   egress:
     - action: Allow

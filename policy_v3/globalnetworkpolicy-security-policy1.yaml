@@ -1,7 +1,7 @@
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:
-  name: default.policy2
+  name: security.sec-policy1
 spec:
   egress:
     - action: Allow
@@ -11,7 +11,7 @@ spec:
     - action: Allow
       destination: {}
       source: {}
-  tier: default
+  tier: security
   types:
     - Ingress
     - Egress

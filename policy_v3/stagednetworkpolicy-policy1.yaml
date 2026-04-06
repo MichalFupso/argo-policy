@@ -1,7 +1,8 @@
 apiVersion: projectcalico.org/v3
-kind: StagedGlobalNetworkPolicy
+kind: StagedNetworkPolicy
 metadata:
-  name: staged-policy2
+  name: default.staged-policy1
+  namespace: calico-system
 spec:
   types:
     - Ingress

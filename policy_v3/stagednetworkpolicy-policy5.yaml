@@ -1,0 +1,13 @@
+apiVersion: projectcalico.org/v3
+kind: StagedNetworkPolicy
+metadata:
+  name: default.staged-policy5
+  namespace: calico-system
+spec:
+  types:
+    - Ingress
+    - Egress
+  ingress:
+    - action: Allow
+  egress:
+    - action: Allow
