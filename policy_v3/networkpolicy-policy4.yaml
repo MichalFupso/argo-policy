@@ -4,6 +4,7 @@ metadata:
   name: policy4
   namespace: calico-system
 spec:
+  selector: all()
   egress:
     - action: Allow
       destination: {}

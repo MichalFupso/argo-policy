@@ -9,5 +9,9 @@ spec:
     - Egress
   ingress:
     - action: Allow
+      source: {}
+      destination: {}
   egress:
     - action: Allow
+      source: {}
+      destination: {}

@@ -3,6 +3,7 @@ kind: StagedGlobalNetworkPolicy
 metadata:
   name: default.staged-policy1
 spec:
+  selector: all()
   types:
     - Ingress
     - Egress

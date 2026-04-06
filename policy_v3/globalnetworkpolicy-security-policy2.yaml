@@ -5,6 +5,15 @@ metadata:
 spec:
   egress:
     - action: Allow
+      protocol: TCP
+      destination: {}
+      source: {}
+    - action: Allow
+      protocol: UDP
+      destination: {}
+      source: {}
+    - action: Allow
+      protocol: ICMP
       destination: {}
       source: {}
   ingress:

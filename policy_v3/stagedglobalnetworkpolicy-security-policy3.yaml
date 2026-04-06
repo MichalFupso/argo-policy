@@ -3,6 +3,7 @@ kind: StagedGlobalNetworkPolicy
 metadata:
   name: security.staged-sec-policy3
 spec:
+  order: 200
   types:
     - Ingress
     - Egress

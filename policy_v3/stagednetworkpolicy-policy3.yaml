@@ -4,10 +4,13 @@ metadata:
   name: default.staged-policy3
   namespace: calico-system
 spec:
+  selector: all()
   types:
     - Ingress
     - Egress
   ingress:
     - action: Allow
+      source: {}
   egress:
     - action: Allow
+      destination: {}
